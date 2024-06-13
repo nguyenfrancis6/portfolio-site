@@ -20,7 +20,7 @@ const Navbar = () => {
           <p className="hidden sm:block text-2xl font-bold">Francis Nguyen</p>
         </Link>
 
-        <ul className="flex items-center gap-5 text-lg pr-12 xl:pr-0">
+        <ul className="flex items-center gap-5 text-lg pr-8 xl:pr-0">
           <li>
             <Link to="/" className="hover:text-blue-700 transition-all duration-200">Home</Link>
           </li>
