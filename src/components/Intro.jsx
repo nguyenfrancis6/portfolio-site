@@ -12,7 +12,7 @@ const Intro = () => {
         <h2 className="text-lg md:text-2xl text-gray-400">Software Developer</h2>
         <p className="leading-7 text-white text-md md:text-lg max-w-sm">
           I am a recent college graduate with a degree in Computer Science from
-          Cal Poly Pomona with expertise in software and web development.
+          Cal Poly Pomona with a passion for software and web development.
           <span className="hidden md:inline">
             {" "}I am eager in learning new technologies and tools to implement in my
             work.
