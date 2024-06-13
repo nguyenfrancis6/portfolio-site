@@ -33,20 +33,20 @@ const Projects = () => {
   ];
   return (
     <section className="max-w-6xl flex flex-col items-center mx-auto gap-12 my-12 px-12">
-      <h1 className="font-bold text-4xl text-center">My Projects</h1>
+      <h1 className="font-bold text-4xl text-center dark:text-white">My Projects</h1>
       <ul className="flex flex-col gap-8">
         {projectData.map((project) => (
           <li key={project.id}>
-            <div className="text-center w-full flex sm:flex-row flex-col justify-center items-center p-12 bg-gray-300 rounded gap-4">
+            <div className="text-center w-full flex sm:flex-row flex-col justify-center items-center p-12 bg-gray-300 dark:bg-black rounded gap-4">
               <div className="h-full w-full">
                 <img
-                  className="rounded min-h-20 min-w-40"
+                  className="rounded-xl min-h-20 min-w-40"
                   src={project.thumbnail}
                   alt=""
                 />
               </div>
-              <div className="w-1/2">
-                <h1 className="font-bold text-sm sm:text-2xl md:text-3xl">
+              <div className="w-1/2 dark:text-white">
+                <h1 className="font-bold text-xl sm:text-2xl md:text-3xl flex justify-center">
                   {project.title}
                 </h1>
                 <p className="hidden sm:block text-lg">{project.stack}</p>
