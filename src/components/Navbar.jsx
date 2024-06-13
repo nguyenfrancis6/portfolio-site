@@ -13,10 +13,10 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-5 text-lg">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="hover:text-blue-700 transition-all duration-200">Home</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" className="hover:text-blue-700 transition-all duration-200">Contact</Link>
           </li>
         </ul>
       </nav>
