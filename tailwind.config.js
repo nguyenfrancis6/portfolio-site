@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+      },
+      screens: {
+        'phone': {'raw' : '(min-width:423px)'}
       }
     },
     
