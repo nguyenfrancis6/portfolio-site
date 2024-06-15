@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import ScrollLink from "./ScrollLink";
 
 const Footer = () => {
   return (
@@ -17,10 +17,10 @@ const Footer = () => {
         <div>
           <ul className="flex items-center gap-5 text-lg pl-2">
             <li>
-              <Link to="/" className="hover:text-gray-300 transition-all duration-200">Home</Link>
+              <ScrollLink to="/" className="hover:text-gray-300 transition-all duration-200">Home</ScrollLink>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-gray-300 transition-all duration-200">Contact</Link>
+              <ScrollLink to="/contact" className="hover:text-gray-300 transition-all duration-200">Contact</ScrollLink>
             </li>
           </ul>
         </div>
