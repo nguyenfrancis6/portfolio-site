@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body {
-  @apply dark:bg-black;
+  @apply dark:bg-black transition-all duration-500;
+
 }

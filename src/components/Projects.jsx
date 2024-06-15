@@ -37,7 +37,7 @@ const Projects = () => {
       <ul className="flex flex-col gap-8">
         {projectData.map((project) => (
           <li key={project.id}>
-            <div className="text-center w-full flex sm:flex-row flex-col justify-center items-center p-12 bg-gray-300 dark:bg-black rounded gap-4 shadow-lg dark:border-white dark:border-solid dark:border-2">
+            <div className="text-center w-full flex sm:flex-row flex-col justify-center items-center p-12 bg-gray-300 dark:bg-black rounded gap-4 shadow-lg dark:border-white dark:border-solid dark:border-2 dark:shadow-white dark:shadow-md">
               <div className="h-full w-full">
                 <img
                   className="rounded-xl min-h-20 min-w-40"

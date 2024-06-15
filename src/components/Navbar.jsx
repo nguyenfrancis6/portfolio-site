@@ -1,4 +1,4 @@
-import logo from "../assets/f-logo.jpg";
+import logo from "../assets/f-logo.png";
 import { FaRegMoon } from "react-icons/fa";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { useDarkMode } from "../context/DarkModeContext";
@@ -15,7 +15,7 @@ const Navbar = () => {
     <header>
       <nav className="flex max-w-7xl w-full mx-auto justify-between items-center h-20 dark:text-white">
         <ScrollLink to="/" className="flex items-center pl-8 xl:pl-0">
-          <img className="h-16 w-auto dark:invert" src={logo} alt="logo" />
+          <img className="h-16 w-auto dark:invert transition duration-500" src={logo} alt="logo" />
           <p className="hidden sm:block text-2xl font-bold">Francis Nguyen</p>
         </ScrollLink>
 
