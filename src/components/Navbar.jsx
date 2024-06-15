@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <header>
+    <header className="bg-white sticky top-0 shadow-md transition-all duration-500 z-50 dark:bg-black dark:shadow-gray-400 dark:shadow-md">
       <nav className="flex max-w-7xl w-full mx-auto justify-between items-center h-20 dark:text-white">
         <ScrollLink to="/" className="flex items-center pl-8 xl:pl-0">
           <img className="h-16 w-auto dark:invert transition duration-500" src={logo} alt="logo" />

@@ -4,7 +4,7 @@ import ScrollLink from "./ScrollLink";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-4 dark:bg-black dark:border-t-white border-solid dark:border-t-2">
+    <footer className="bg-blue-900 text-white py-4 dark:bg-black dark:border-t-white border-solid dark:border-t-2 transition-all duration-500">
       <div className="flex flex-col items-center gap-4">
         <div className="flex items-center gap-3 text-2xl pr-2">
           <a href="https://www.linkedin.com/in/francisnnguyen/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-all duration-200">
