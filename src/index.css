@@ -4,5 +4,4 @@
 
 body {
   @apply dark:bg-black transition-all duration-500;
-
 }

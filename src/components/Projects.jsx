@@ -13,6 +13,8 @@ const Projects = () => {
       thumbnail: instagram,
       link: "https://insta-clone-lovat-sigma.vercel.app",
       github: "https://github.com/nguyenfrancis6/insta-clone",
+      description:
+        "An Instagram clone website where users can sign up with email/Google and be able to create posts, view profiles, comment, and follow others.",
     },
     {
       id: "2",
@@ -21,6 +23,8 @@ const Projects = () => {
       thumbnail: pokemon,
       link: "https://pokemon-liard-two.vercel.app",
       github: "https://github.com/nguyenfrancis6/pokemon",
+      description:
+        "A Pokemon web application that lets users search up any pokemon with data from the PokeAPI and browse through the Pokemon collection.",
     },
     {
       id: "3",
@@ -29,11 +33,15 @@ const Projects = () => {
       thumbnail: nft,
       link: "https://nft-marketplace-roan-six-32.vercel.app",
       github: "https://github.com/nguyenfrancis6/nft-marketplace",
+      description:
+        "A site that emulates how a typical NFT website looks and functions. NFT and user data is fetched from a cloud server and displayed in multiple components.",
     },
   ];
   return (
     <section className="max-w-6xl flex flex-col items-center mx-auto gap-12 my-12 px-12">
-      <h1 className="font-bold text-4xl text-center dark:text-white">My Projects</h1>
+      <h1 className="font-bold text-4xl text-center dark:text-white">
+        My Projects
+      </h1>
       <ul className="flex flex-col gap-8">
         {projectData.map((project) => (
           <li key={project.id}>
@@ -46,11 +54,12 @@ const Projects = () => {
                 />
               </div>
               <div className="w-1/2 dark:text-white">
-                <h1 className="font-bold text-xl sm:text-2xl md:text-3xl flex justify-center">
+                <h1 className="font-bold text-xl sm:text-2xl md:text-3xl flex justify-center mb-2">
                   {project.title}
                 </h1>
-                <p className="hidden sm:block text-lg">{project.stack}</p>
-                <div className="flex justify-center items-center gap-6 mt-2 text-lg sm:text-2xl">
+                <p className="hidden lg:block text-lg m-4">{project.description}</p>
+                <p className="flex justify-center text-lg">{project.stack}</p>
+                <div className="flex justify-center items-center gap-6 mt-2 text-2xl">
                   <a
                     href={project.github}
                     target="_blank"
