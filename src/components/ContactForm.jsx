@@ -44,7 +44,7 @@ const ContactForm = () => {
       );
   };
   return (
-    <div className="relative bg-blue-900 max-w-3xl min-w-60 h-[80vh] flex flex-col items-center mx-8 md:mx-auto my-14 p-10 gap-4 rounded-2xl text-white">
+    <div className="relative bg-blue-900 max-w-3xl min-w-60 h-[70vh] phone:h-[80vh] flex flex-col items-center mx-8 md:mx-auto my-14 p-10 gap-4 rounded-2xl text-white">
       <h1 className="font-bold text-4xl sm:text-5xl text-center">Let's Connect!</h1>
       {formError && (
         <div className="static phone:absolute text-sm phone:text-md phone:top-24 bg-red-500 text-white p-1 sm:p-2 rounded">
@@ -80,7 +80,7 @@ const ContactForm = () => {
         <div className="flex flex-col">
           <label className="text-xl mb-2">Message</label>
           <textarea
-            className="border px-1 py-1 h-24 text-black rounded text-xl focus:outline-slate-700"
+            className="border mb-2 px-1 py-1 h-14 phone:h-24 text-black rounded text-xl focus:outline-slate-700"
             name="message"
           />
         </div>

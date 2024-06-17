@@ -50,7 +50,7 @@ const Projects = () => {
                 <img
                   className="rounded-xl min-h-20 min-w-40"
                   src={project.thumbnail}
-                  alt=""
+                  alt={project.title}
                 />
               </div>
               <div className="w-1/2 dark:text-white">
