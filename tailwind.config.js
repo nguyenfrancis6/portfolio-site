@@ -10,8 +10,9 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       screens: {
-        'phone': {'raw' : '(min-width:423px)'}
-      }
+        'phone': { 'raw' : '(min-width: 423px)'},
+        'h900' : { 'raw' : '(min-height: 900px)' },
+      },
     },
     
   },

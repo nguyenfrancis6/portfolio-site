@@ -31,9 +31,9 @@ const ContactForm = () => {
           setTimeout(() => {
             setFormSuccess("");
           }, 5000);
-          formElements.user_name.value = ""
-          formElements.user_email.value = ""
-          formElements.message.value = ""
+          formElements.user_name.value = "";
+          formElements.user_email.value = "";
+          formElements.message.value = "";
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -44,52 +44,56 @@ const ContactForm = () => {
       );
   };
   return (
-    <div className="relative bg-blue-900 max-w-3xl min-w-60 h-[70vh] phone:h-[80vh] flex flex-col items-center mx-8 md:mx-auto my-14 p-10 gap-4 rounded-2xl text-white">
-      <h1 className="font-bold text-4xl sm:text-5xl text-center">Let's Connect!</h1>
-      {formError && (
-        <div className="static phone:absolute text-sm phone:text-md phone:top-24 bg-red-500 text-white p-1 sm:p-2 rounded">
-          {"⚠ " + formError}
-        </div>
-      )}
-      {formSuccess && (
-        <div className="static phone:absolute text-sm phone:text-md phone:top-24 bg-green-500 text-white p-2 rounded">
-          {formSuccess}
-        </div>
-      )}
-      <form
-        className="flex flex-col w-full h-full justify-around"
-        ref={form}
-        onSubmit={sendEmail}
-      >
-        <div className="flex flex-col">
-          <label className="text-xl mb-2">Name</label>
+    <div className="min-h-[100vh] flex items-center justify-center">
+      <div className="relative bg-blue-900 max-w-3xl min-w-60 flex flex-col items-center mx-8 my-14 p-10 gap-4 rounded-2xl text-white -mt-8 md:mx-auto md:min-w-[600px] lg:min-w-[800px] h900:min-h-[700px]">
+        <h1 className="font-bold text-4xl sm:text-5xl text-center">
+          Let's Connect!
+        </h1>
+        {formError && (
+          <div className="static phone:absolute text-sm phone:text-md phone:top-24 bg-red-500 text-white p-1 sm:p-2 rounded">
+            {"⚠ " + formError}
+          </div>
+        )}
+        {formSuccess && (
+          <div className="static phone:absolute text-sm phone:text-md phone:top-24 bg-green-500 text-white p-2 rounded">
+            {formSuccess}
+          </div>
+        )}
+        <form
+          className="flex flex-col w-full h-full h900:min-h-[600px] justify-around"
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <div className="flex flex-col">
+            <label className="text-xl mb-2">Name</label>
+            <input
+              className="border mb-4 px-1 h-8 phone:h-12 rounded text-black text-xl focus:outline-slate-700 h900:h-12"
+              type="text"
+              name="user_name"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label className="text-xl mb-2">Email</label>
+            <input
+              className="border px-1 mb-4 h-8 phone:h-12 text-black rounded text-xl focus:outline-slate-700 h900:h-12"
+              type="email"
+              name="user_email"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label className="text-xl mb-2">Message</label>
+            <textarea
+              className="border mb-4 px-1 py-1 h-14 phone:h-24 text-black rounded text-xl focus:outline-slate-700 h900:h-24"
+              name="message"
+            />
+          </div>
           <input
-            className="border px-1 h-8 phone:h-12 rounded text-black text-xl focus:outline-slate-700"
-            type="text"
-            name="user_name"
+            className="border border-white max-w-full w-full mx-auto cursor-pointer rounded bg-blue-950 h-12 hover:opacity-60 active:opacity-30"
+            type="submit"
+            value="Send"
           />
-        </div>
-        <div className="flex flex-col">
-          <label className="text-xl mb-2">Email</label>
-          <input
-            className="border px-1 h-8 phone:h-12 text-black rounded text-xl focus:outline-slate-700"
-            type="email"
-            name="user_email"
-          />
-        </div>
-        <div className="flex flex-col">
-          <label className="text-xl mb-2">Message</label>
-          <textarea
-            className="border mb-2 px-1 py-1 h-14 phone:h-24 text-black rounded text-xl focus:outline-slate-700"
-            name="message"
-          />
-        </div>
-        <input
-          className="border border-white max-w-full w-full mx-auto cursor-pointer rounded bg-blue-950 h-12 hover:opacity-60 active:opacity-30"
-          type="submit"
-          value="Send"
-        />
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
