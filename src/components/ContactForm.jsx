@@ -48,7 +48,7 @@ const ContactForm = () => {
       <h1 className="font-bold text-4xl sm:text-5xl text-center">Let's Connect!</h1>
       {formError && (
         <div className="static phone:absolute text-sm phone:text-md phone:top-24 bg-red-500 text-white p-1 sm:p-2 rounded">
-          {formError}
+          {"⚠ " + formError}
         </div>
       )}
       {formSuccess && (
@@ -64,7 +64,7 @@ const ContactForm = () => {
         <div className="flex flex-col">
           <label className="text-xl mb-2">Name</label>
           <input
-            className="border px-1 h-8 phone:h-12 rounded text-black text-xl"
+            className="border px-1 h-8 phone:h-12 rounded text-black text-xl focus:outline-slate-700"
             type="text"
             name="user_name"
           />
@@ -72,7 +72,7 @@ const ContactForm = () => {
         <div className="flex flex-col">
           <label className="text-xl mb-2">Email</label>
           <input
-            className="border px-1 h-8 phone:h-12 text-black rounded text-xl"
+            className="border px-1 h-8 phone:h-12 text-black rounded text-xl focus:outline-slate-700"
             type="email"
             name="user_email"
           />
@@ -80,7 +80,7 @@ const ContactForm = () => {
         <div className="flex flex-col">
           <label className="text-xl mb-2">Message</label>
           <textarea
-            className="border px-1 py-1 h-24 text-black rounded text-xl"
+            className="border px-1 py-1 h-24 text-black rounded text-xl focus:outline-slate-700"
             name="message"
           />
         </div>
