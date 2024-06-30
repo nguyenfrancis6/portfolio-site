@@ -61,7 +61,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="h-full hidden sm:block">
-          <img className="max-w-[600px] max-h-[600px] w-full h-full" src={grad} alt="me" />
+          <img className="max-w-[600px] max-h-[600px] w-full h-full rounded-md" src={grad} alt="me" />
         </div>
       </section>
   );

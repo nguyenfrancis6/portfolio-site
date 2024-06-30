@@ -18,16 +18,6 @@ const Projects = () => {
     },
     {
       id: "2",
-      title: "Pokemon Web App",
-      stack: "React, HTML/CSS",
-      thumbnail: pokemon,
-      link: "https://pokemon-liard-two.vercel.app",
-      github: "https://github.com/nguyenfrancis6/pokemon",
-      description:
-        "A Pokemon web application that lets users search up any pokemon with data from the PokeAPI and browse through the Pokemon collection.",
-    },
-    {
-      id: "3",
       title: "NFT Marketplace",
       stack: "React, HTML/CSS",
       thumbnail: nft,
@@ -35,6 +25,16 @@ const Projects = () => {
       github: "https://github.com/nguyenfrancis6/nft-marketplace",
       description:
         "A site that emulates how a typical NFT website looks and functions. NFT and user data is fetched from a cloud server and displayed in multiple components.",
+    },
+    {
+      id: "3",
+      title: "Pokemon Web App",
+      stack: "React, HTML/CSS",
+      thumbnail: pokemon,
+      link: "https://pokemon-liard-two.vercel.app",
+      github: "https://github.com/nguyenfrancis6/pokemon",
+      description:
+        "A Pokemon web application that lets users search up any pokemon with data from the PokeAPI and browse through the Pokemon collection.",
     },
   ];
   return (
