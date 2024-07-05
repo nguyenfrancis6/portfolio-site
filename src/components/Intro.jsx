@@ -17,7 +17,7 @@ const Intro = () => {
       <section className="flex h-full justify-center max-w-7xl mx-12 xl:mx-auto my-14 gap-4 bg-blue-900 p-8 rounded-2xl items-center">
         <div className="h-full max-w-xs md:max-w-lg flex flex-col gap-3 w-full">
           <h1 className="font-bold text-3xl md:text-5xl text-white">
-            Hi, I'm Francis
+            Hi, I'm Francis <span className="hidden lg:inline">👋</span>
           </h1>
           <h2 className="text-lg md:text-2xl text-gray-400">
             Software Developer

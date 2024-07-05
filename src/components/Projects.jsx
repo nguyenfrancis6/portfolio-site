@@ -3,6 +3,7 @@ import instagram from "../assets/instagram.png";
 import pokemon from "../assets/pokemonapp.png";
 import nft from "../assets/nftsite.png";
 import { FaGithub, FaLink } from "react-icons/fa";
+import ScrollLink from "./ScrollLink";
 
 const Projects = () => {
   const projectData = [
@@ -38,7 +39,10 @@ const Projects = () => {
     },
   ];
   return (
-    <section id="proj" className="max-w-6xl flex flex-col items-center mx-auto gap-12 my-12 px-12">
+    <section
+      id="proj"
+      className="max-w-6xl flex flex-col items-center mx-auto gap-12 my-12 px-12"
+    >
       <h1 className="font-bold text-4xl text-center dark:text-white">
         My Projects
       </h1>
@@ -57,7 +61,9 @@ const Projects = () => {
                 <h1 className="font-bold text-xl sm:text-2xl md:text-3xl flex justify-center mb-2">
                   {project.title}
                 </h1>
-                <p className="hidden lg:block text-lg m-4">{project.description}</p>
+                <p className="hidden lg:block text-lg m-4">
+                  {project.description}
+                </p>
                 <p className="flex justify-center text-lg">{project.stack}</p>
                 <div className="flex justify-center items-center gap-6 mt-2 text-2xl">
                   <a
@@ -80,6 +86,11 @@ const Projects = () => {
           </li>
         ))}
       </ul>
+      <ScrollLink to="/upcoming">
+        <button className="bg-green-300 p-4 rounded shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-green-200">
+          Click here to see what I'm cooking up 👨‍🍳
+        </button>
+      </ScrollLink>
     </section>
   );
 };
