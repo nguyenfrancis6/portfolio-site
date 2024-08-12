@@ -45,7 +45,7 @@ const ContactForm = () => {
   };
   return (
     <div className="min-h-[100vh] flex items-center justify-center">
-      <div className="relative bg-blue-900 max-w-3xl min-w-60 flex flex-col items-center mx-8 my-14 p-10 gap-4 rounded-2xl text-white -mt-8 md:mx-auto md:min-w-[600px] lg:min-w-[800px] h900:min-h-[700px]">
+      <div className="relative bg-blue-900 max-w-3xl min-w-60 flex flex-col items-center mx-8 my-14 p-10 phone:py-10 py-6 gap-4 rounded-2xl text-white -mt-8 md:mx-auto md:min-w-[600px] lg:min-w-[800px] h900:min-h-[700px]">
         <h1 className="font-bold text-4xl sm:text-5xl text-center">
           Let's Connect!
         </h1>
@@ -83,7 +83,7 @@ const ContactForm = () => {
           <div className="flex flex-col">
             <label className="text-xl mb-2">Message</label>
             <textarea
-              className="border mb-4 px-1 py-1 h-14 phone:h-24 text-black rounded text-xl focus:outline-slate-700 h900:h-24"
+              className="border mb-4 px-1 py-1 h-16 phone:h-24 text-black rounded text-xl focus:outline-slate-700 h900:h-24"
               name="message"
             />
           </div>
