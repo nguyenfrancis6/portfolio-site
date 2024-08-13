@@ -3,7 +3,7 @@ import ca from '../assets/california-seismic.png'
 
 const Experience = () => {
   return (
-    <section className="max-w-6xl flex flex-col items-center mx-auto gap-12 my-36 px-12 dark:text-white">
+    <section id="exp" className="max-w-6xl flex flex-col items-center mx-auto gap-12 my-36 px-12 dark:text-white">
       <h1 className="font-bold text-4xl text-center dark:text-white">
         Experience
       </h1>

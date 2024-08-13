@@ -6,7 +6,7 @@ const NextProject = () => {
   return (
     <section className="flex flex-col items-center min-h-[80vh] mx-12 max-w-screen-xl py-12 gap-8 sm:items-start sm:flex-row xl:mx-auto dark:text-white">
       <div className="w-1/2 sm:mb-0 mb-4 text-center sm:text-left min-w-[240px]">
-        <h1 className="text-3xl font-bold mb-8">Full-Stack Spotify Guessing Game (TuneRiddle?) 🎵</h1>
+        <h1 className="text-3xl font-bold mb-8">Full-Stack Spotify Guessing Game 🎵</h1>
         <p className="sm:leading-8 sm:text-xl">
           In my daily activities, I always listen to music through Spotify.
           Being one of my most used web applications, the interest in music led me to

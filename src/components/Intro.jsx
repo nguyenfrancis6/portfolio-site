@@ -5,13 +5,16 @@ import resume from "../assets/FrancisNguyen_resume.pdf";
 import grad from '../assets/grad.jpg'
 
 const Intro = () => {
-  const handleScrollToProjects = (e) => {
+  const handleScroll = (e, sectionId) => {
     e.preventDefault();
-    const projectSection = document.getElementById('proj');
+    const projectSection = document.getElementById(sectionId);
     const yOffset = -100; // Adjust the offset as needed
     const y = projectSection.getBoundingClientRect().top + window.scrollY + yOffset;
     window.scrollTo({ top: y, behavior: 'smooth' });
   };
+
+  const handleScrollToExperience = (e) => handleScroll(e, 'exp')
+  const handleScrollToProjects = (e) => handleScroll(e, 'proj')
 
   return (
       <section className="flex h-full justify-center max-w-7xl mx-12 xl:mx-auto my-14 gap-4 bg-blue-900 p-8 rounded-2xl items-center">
@@ -31,7 +34,7 @@ const Intro = () => {
               I am eager in learning new technologies and tools to implement in
               my work.
             </span>{" "}
-            Check out <a href="#proj" className="text-orange-300" onClick={handleScrollToProjects}>my projects!</a>
+            Check out my <a href="#exp" className="text-orange-300" onClick={handleScrollToExperience}>experience</a> and <a href="#proj" className="text-orange-300" onClick={handleScrollToProjects}> projects!</a>
           </p>
           <div className="flex text-white gap-4 text-2xl pt-2">
             <a
