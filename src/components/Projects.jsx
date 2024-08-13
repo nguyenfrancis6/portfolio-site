@@ -65,7 +65,7 @@ const Projects = () => {
                   {project.description}
                 </p>
                 <p className="flex justify-center text-lg">{project.stack}</p>
-                <div className="flex justify-center items-center gap-6 mt-2 text-2xl">
+                <div className="flex justify-center items-center gap-6 mt-3 text-2xl">
                   <a
                     href={project.github}
                     target="_blank"
