@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoIosDocument } from "react-icons/io";
-import resume from "../assets/FrancisNguyen_resume.pdf";
+import resume from "../assets/Francis_Nguyen_Resume.pdf"
 import grad from '../assets/grad.jpg'
 
 const Intro = () => {
