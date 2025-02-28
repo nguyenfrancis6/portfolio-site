@@ -46,7 +46,7 @@ const Projects = () => {
       link: "",
       github: "https://github.com/nguyenfrancis6/blog-site",
       description:
-        "A blog website where signed in users can upvote blogs and leave comments",
+        "A blog website where signed in users can upvote blogs and leave comments.",
     },
   ];
   return (

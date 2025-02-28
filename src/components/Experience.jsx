@@ -11,7 +11,7 @@ const Experience = () => {
         <div>
           <h2 className="font-bold text-2xl">Frontend Developer Intern</h2>
           <p className="text-xl italic">California Seismic</p>
-          <p className="text-lg mb-4">June 2024 - July 2024</p>
+          <p className="text-lg mb-4">June 2024 - August 2024</p>
           <p className="w-full leading-8">
           • Created the ASCE7 feature, displaying sections of the structural
             design engineering code for civil engineers to study from <br /><br />
