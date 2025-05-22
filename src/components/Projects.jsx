@@ -2,7 +2,6 @@ import React from "react";
 import instagram from "../assets/instagram.png";
 import pokemon from "../assets/pokemonapp.png";
 import nft from "../assets/nftsite.png";
-import blog from '../assets/blog.png'
 import { FaGithub, FaLink } from "react-icons/fa";
 import ScrollLink from "./ScrollLink";
 
@@ -37,16 +36,6 @@ const Projects = () => {
       github: "https://github.com/nguyenfrancis6/pokemon",
       description:
         "A Pokemon web application that lets users search up any pokemon with data from the PokeAPI and browse through the Pokemon collection.",
-    },
-    {
-      id: "4",
-      title: "Blog Site",
-      stack: "React, Node, Express, MongoDB, Google Cloud",
-      thumbnail: blog,
-      link: "",
-      github: "https://github.com/nguyenfrancis6/blog-site",
-      description:
-        "A blog website where signed in users can upvote blogs and leave comments.",
     },
   ];
   return (
