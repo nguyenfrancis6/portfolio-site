@@ -3,6 +3,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ScrollLink from "./ScrollLink";
 
 const Footer = () => {
+  let currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-blue-900 text-white py-4 dark:bg-black dark:border-t-white border-solid border-t transition-all duration-500">
       <div className="flex flex-col items-center gap-4">
@@ -25,7 +27,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <p className="text-lg">©2024 Francis Nguyen</p>
+          <p className="text-lg">©{currentYear} Francis Nguyen</p>
         </div>
       </div>
     </footer>
